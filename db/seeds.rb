@@ -12,7 +12,7 @@ Meal.create(
 
 Meal.create(
   name: "chicken",
-  price: 5) # id = 2
+  price: 5.50) # id = 2
 
 Meal.create(
   name: "mashed potatoes",
@@ -20,18 +20,18 @@ Meal.create(
 
 Meal.create(
   name: "hamburger",
-  price: 6) # id = 4
+  price: 6.75) # id = 4
 
 Meal.create(
   name: "fish",
-  price: 8) # id = 5
+  price: 8.20) # id = 5
 
 Meal.create(
   name: "fries",
-  price: 4 ) # id = 6
+  price: 4.50 ) # id = 6
 
 Order.create(
-  time: DateTime.now + 1.hours
+  time: DateTime.now + 1.hour
 )
 
 Order.create(
@@ -85,3 +85,27 @@ Item.create(
   meal_id: 6,
   quantity: 6
 ) # id 8
+
+Note.create(
+  content: "lettice, tomato and onion",
+  notable_id: 1,
+  notable_type: "Meal"
+)
+
+Note.create(
+  content: "can be fried or grilled",
+  notable_id: 2,
+  notable_type: "Meal"
+)
+
+Note.create(
+  content: "please without salt",
+  notable_id: 1,
+  notable_type: "Order"
+)
+
+Note.create(
+  content: "Mayo and BBQ sauce",
+  notable_id: 3,
+  notable_type: "Item"
+)

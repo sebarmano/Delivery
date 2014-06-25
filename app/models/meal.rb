@@ -4,4 +4,10 @@ class Meal < ActiveRecord::Base
 
   has_many :items
   has_many :orders, through: :items
+  has_many :notes, as: :notable
+
+  def self.vegetarian
+    where(name: ["salad", "mashed potatoes", "fries", "fish"])
+  end
+
 end
