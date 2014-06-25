@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  meal_id: 
-  order_id: 
+  meal_id:
+  order_id:
   quantity: 1
 
 two:
-  meal_id: 
-  order_id: 
+  meal_id:
+  order_id:
   quantity: 1
